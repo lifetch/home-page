@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+.wrapper{
+  max-width: 1280px;
+  margin: 128px auto 0 auto;
+  padding: 0 25px;
+  position: relative;
+  .yac_link{
+    position: absolute;
+    margin-top: -140px;
+    top: 0;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.end_block_center{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.figure{
+  display: block;
+  margin: auto;
+}
+
+.title{
+  margin-top: -20px;
+  div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+
+  }
+  h1{
+    text-transform: uppercase;
+    font-family: Atyp Display;
+    font-size: 144px;
+    font-weight: 400;
+    line-height: 108px;
+    letter-spacing: -0.02em;
+  }
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  'a d'
+  'c c';
+  gap: 16px;
+  padding-top: 74px;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding-top: 72px;
+}
+
+.description{
+  max-width: 416px;
+  font-family: IBM Plex Mono;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  letter-spacing: -0.06em;
+  color: #FFFFFFA3;
+}
+
+.blocks{
+  margin-top: 72px;
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+}
+
+.block{
+  width: 100%;
+  background: #171717;
+  border: 1px solid #FFFFFF14;
+  border-radius: 16px;
+  transition: .5s ease;
+  &:hover{
+    transform: scale(.99);
+  }
+  p{
+    font-family: Atyp Display;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 44px;
+    margin-left: 48px;
+    margin-bottom: 64px;
+  }
+}
+
+.figure_1 {
+  display: block;
+  margin: 64px auto 234px auto;
+}
+
+.figure_2 {
+  margin: 0 124px 54px;
+}
+
+.figure_3 {
+  display: block;
+  float: right;
+  margin: 0 55px 53px 0;
+}
+
+.figure_4 {
+  margin: 80px 12px 243px 33px;
+}
+
+.end_block{
+  grid-area: c;
+  width: 100%;
+  height: 640px;
+  background: #171717;
+  border: 1px solid #FFFFFF14;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  position: relative;
+  transition: .5s ease;
+
+  &:hover {
+    transform: scale(.99);
+  }
+  .title {
+    font-family: Atyp Display;
+    font-size: 144px;
+    font-weight: 400;
+    line-height: 144px;
+  }
+  .subtitle {
+    max-width: 542px;
+    text-align: center;
+    font-family: Atyp Display;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: center;
+    color: #8B8B8B;
+    margin-top: 8px;
+  }
+  .dec-blocks{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .dec-block{
+    background: #FFFFFF14;
+    position: absolute;
+    border-radius: 32px;
+    aspect-ratio: 1/1;
+
+    &:nth-child(1){
+      width: 176px;
+      top: 6%;
+      left: 10%;
+      rotate: -15deg;
+    }
+
+    &:nth-child(2) {
+      width: 103px;
+      top: 5%;
+      left: 30%;
+      rotate: 15deg;
+      filter: blur(8px);
+    }
+
+    &:nth-child(3) {
+      width: 130px;
+      top: 70%;
+      left: 11%;
+      rotate: 13.8deg;
+    }
+
+    &:nth-child(4) {
+      width: 114px;
+      top: 5%;
+      right: 10%;
+      rotate: 15deg;
+      filter: blur(10px);
+    }
+
+    &:nth-child(5) {
+      width: 163px;
+      top: 60%;
+      right: 18%;
+      rotate: -15deg;
+      filter: blur(20px);
+      background: #B3FF68;
+    }
+
+    &:nth-child(6) {
+      width: 103px;
+      top: 60%;
+      right: 5%;
+      rotate: 15deg;
+    }
+  }
+}
+
+.title_1{
+  display: flex;
+}
+.mobile_menu{
+  display: flex;
+  flex-flow: column;
+  div{
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+@media (max-width: 1300px) {
+  .content{
+    display:block;
+  }
+  .row_2{
+    .blocks{
+      margin-top: 16px;
+    }
+  }
+  .blocks{
+    width: 100%;
+    align-self: center;
+  }
+  .block{
+    max-width: 632px;
+    align-self: center;
+  }
+  .end_block{
+    margin: auto;
+    max-width: 632px;
+    margin-top: 16px;
+    .title{
+      text-align: center;
+    }
+  }
+  .figure{
+    right: 5%;
+    position: absolute;
+    top: -3%;
+    width: 204px;
+    height: 212px;
+  }
+
+  .wrapper {
+    margin: 162px auto 0 auto;
+    position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+  .figure_2{
+    margin: 0 74px 54px;
+  }
+  .mobile_menu{
+    text-align: center;
+    h1{
+      font-family: Atyp Display;
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 48px;
+      letter-spacing: -0.04em;
+    }
+  }
+  .figure {
+    right: 3%;
+    position: absolute;
+    top: -5%;
+    width: 104px;
+    height: 112px;
+  }
+
+  .wrapper {
+    margin: 162px auto 0 auto;
+    position: relative;
+  }
+  .information{
+    grid-template-columns: 1fr;
+    .description{
+      //max-width: 312px;
+      justify-self: center;
+    }
+  }
+  .block{max-width: 312px;}
+  .figure_1{
+    width: 283px;
+    height: 167px;
+    margin: 64px auto 35px auto;
+  }
+  .figure_2{
+    width: 187px;
+    height: 208px;
+  }
+  .figure_3 {
+    width: 160px;
+    height: 210px;
+  }
+  .figure_4 {
+    width: 220px;
+    height: 120px;
+    margin: 80px auto 30px auto;
+    display: block;
+  }
+  .figure_5 {
+    width: 280px;
+    height: 147px;
+  }
+  .block-title {
+    font-family: Atyp Display;
+    font-size: 28px !important;
+    font-weight: 400;
+    line-height: 17.92px;
+    letter-spacing: -0.02em;
+
+    margin-bottom: 32px !important;
+  }
+  .end_block{
+    max-width: 312px;
+    height: 260px;
+    .title{
+      text-align: center;
+
+      font-family: Atyp Display;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 30.72px;
+      letter-spacing: -0.02em;
+
+    }
+
+    .dec-block {
+      border-radius: 8px;
+
+      &:nth-child(1) {
+        width: 44px;
+      }
+
+      &:nth-child(2) {
+        width: 33px;
+      }
+
+      &:nth-child(3) {
+        width: 26px;
+      }
+
+      &:nth-child(4) {
+        width: 29px;
+      }
+
+      &:nth-child(5) {
+        width: 44px;
+
+      }
+
+      &:nth-child(6) {
+        width: 32px;
+      }
+    }
+  }
+}

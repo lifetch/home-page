@@ -1,0 +1,286 @@
+.wrapper{
+  max-width: 1280px;
+  margin: auto;
+  padding: 64px 25px 0 25px;
+}
+
+.chips-container{
+  display: grid;
+  grid-template-areas:
+          'a a'
+          'b c';
+  gap: 16px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.chip{
+  width: 100%;
+  height: 420px;
+  border-radius: 16px;
+  background: rgba(27, 27, 27, 1);
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  &:nth-child(2){
+    display: unset;
+    justify-content: unset;
+    text-align: center;
+  }
+}
+
+.chip-title{
+  font-family: Atyp Display;
+  font-size: 44px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  align-self: flex-end;
+}
+
+.first{
+  margin-bottom: 68px;
+  margin-left: 68px;
+}
+
+.secound{
+  margin-top: 54px;
+}
+
+.third{
+  margin-bottom: 56px;
+  margin-left: 26px;
+}
+
+.figure{
+  width: 292px;
+  height: 416px;
+  border-radius: 40px;
+  border: 11px solid rgba(255, 255, 255);
+}
+
+.chip:nth-child(1){
+  grid-area: a;
+}
+
+.f_first{
+  margin-top: 56px;
+  margin-right: 119px;
+}
+
+.f_secound{
+  width: 416px;
+  height: 292px;
+  margin-right: -50px;
+  margin-top: 64px;
+  box-sizing: border-box;
+}
+
+.figures-container{
+  position: relative;
+  .ball{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: absolute;
+    &:nth-child(1){
+      width: 79px;
+      background-color: #D9D9D90A;
+      right: 50px;
+    }
+
+    &:nth-child(2) {
+      width: 67px;
+      background: #D9D9D90A;
+      left: 79px;
+      top: 70px;
+    }
+
+    &:nth-child(3) {
+      width: 79px;
+      background: #D9D9D914;
+      top: 188px;
+      left: 146px;
+    }
+
+    &:nth-child(4) {
+      width: 121px;
+      background: #D9D9D929;
+      right: 89px;
+      top: 156px;
+    }
+  }
+}
+
+.low-description{
+  margin-top: 64px;
+  display: flex;
+
+  .description{
+    font-family: Atyp Display;
+    font-size: 24px;
+    font-weight: 400;
+    color: #686868;
+    max-width: 948px;
+  }
+
+  .year{
+    display: flex;
+    align-items: center;
+    color: #686868;
+    margin-top: 44px;
+    p{
+      margin: 0 35px;
+
+      font-family: Atyp Display;
+      font-size: 24px;
+      font-weight: 400;
+    }
+    span{
+      font-family: Atyp Display;
+      font-size: 44px;
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  .l_figure{
+    width: 108px;
+    height: 114px;
+    margin-left: 118px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 768px) {
+  .f_first{
+    margin-right: 40px;
+  }
+  .chip-title{
+    margin-left: 20px;
+    font-size: 33px;
+  }
+
+  .f_secound{
+    margin-right: -200px;
+  }
+  .third{
+    max-width: 152px;
+  }
+  .secound{
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+  .ball {
+    &:nth-child(1) {
+      right: 20px;
+    }
+    &:nth-child(2) {
+      left: 29px;
+    }
+    &:nth-child(3) {
+      left: 96px !important;
+    }
+    &:nth-child(4) {
+      right: 19px !important;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .f_first {
+    margin-right: 40px;
+  }
+  .chip-title {
+    margin-left: 20px;
+    font-size: 33px;
+  }
+
+  .f_secound {
+    margin-right: -200px;
+  }
+  .third {
+    max-width: 152px;
+  }
+  .secound {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .chips-container {
+    grid-template-areas: unset;
+    grid-template-columns: 1fr;
+  }
+
+  .chip:nth-child(1) {
+    grid-area: unset;
+  }
+
+  .l_figure{
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .chip{
+    height: 340px;
+  }
+  .f_first{
+    width: 140px;
+    height: 250px;
+    margin-top: 120px;
+  }
+
+  .first{
+    margin-bottom: 40px;
+  }
+  .f_secound{
+    height: 192px;
+    width: 300px;
+    margin-right: -100px;
+    margin-top: 85px;
+  }
+  .chip-title{
+    font-size: 28px;
+  }
+
+
+  .ball {
+    &:nth-child(1) {
+      right: 20px !important;
+    }
+
+    &:nth-child(2) {
+      left: 29px !important;
+      top: 40px !important;
+    }
+
+    &:nth-child(3) {
+      left: 66px !important;
+      top: 150px !important;
+    }
+
+    &:nth-child(4) {
+      right: 29px !important;
+      top: 110px !important;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .f_first{
+    margin-right: 20px !important;
+    width: 170px;
+    margin-top: 80px;
+    margin-left: 70px;
+  }
+
+  .first{
+    margin-top: 40px;
+  }
+
+  .chip:nth-child(1) {
+    display: unset;
+  }
+}

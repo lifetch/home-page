@@ -1,0 +1,142 @@
+.wrapper{
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 25px;
+  margin-top: 96px;
+  position: relative;
+}
+
+.tag{
+  font-family: Atyp Display;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 8px 24px;
+  background: #EDEDED0A;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.title-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: Atyp Display;
+  font-size: 144px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 120px;
+  max-width: 785px;
+  margin-top: 60px;
+}
+
+.figure_1{
+  //margin-left: 71px;
+  max-width: 440px;
+  height: auto;
+  max-height: 271px;
+}
+
+.stages{
+  margin-top: 76px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.figure_2 {
+  width: 50%;
+  height: 100%;
+  margin-left: 65px;
+  margin-top: 50px;
+}
+
+.content-container{
+  margin-left: 65px;
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+}
+
+.stage{
+  border-bottom: 1px solid #5E5E5E;
+  border-right: 1px solid #5E5E5E;
+
+  .index{
+    font-family: Atyp Display;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+
+    color: #FFFFFF52;
+    margin-top: 16px;
+  }
+
+  .s-title{
+    font-family: Atyp Display;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    margin-top: 16px;
+  }
+
+  .s-description{
+    font-family: IBM Plex Mono;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.06em;
+
+    color: #FFFFFF52;
+    max-width: 491px;
+    margin-top: 64px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .figure_1{
+    position: absolute;
+    right: 0;
+    padding-right: 25px;
+  }
+}
+
+
+@media (max-width: 830px) {
+  .title{
+    font-size: 100px;
+  }
+  .figure_1{
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .figure_2{
+    display: none;
+  }
+  .content-container{
+    margin-left: unset;
+    margin-top: 50px;
+  }
+  .stages{
+    display: unset;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 65px;
+    line-height: 100%;
+  }
+}
+
+@media (max-width: 407px) {
+  .title {
+    font-size: 45px;
+  }
+  .figure_1{
+    max-width: 230px;
+  }
+}

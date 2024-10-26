@@ -1,0 +1,42 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #121212;
+  color: white;
+}
+
+.yac_link {
+  position: absolute;
+  margin-top: -40px;
+}
+
+*{
+  margin: 0; padding: 0;
+}
+
+
+@font-face {
+  font-family: 'Atyp Display';
+  src: local('Atyp Display'), local('AtypDisplay-Regular'),
+  url('assets/fonts/Atyp/AtypDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Atyp Display';
+  src: local('Atyp Display Medium'), local('AtypDisplay-Medium'),
+  url('assets/fonts/Atyp/AtypDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: local('Neue Machina Regular'), local('NeueMachina-Regular'),
+  url('assets/fonts/NeueMachina/NeueMachina-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

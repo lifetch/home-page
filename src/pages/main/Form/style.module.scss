@@ -1,0 +1,259 @@
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.form-padding{
+  padding: 0 25px;
+}
+.form-block{
+  max-width: 1280px;
+  margin: 128px auto 0 auto;
+  padding: 32px;
+  border-radius: 24px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.04);
+
+  .form-titles{
+    .title{
+      font-family: Atyp Display;
+      font-size: 144px;
+      font-weight: 400;
+      line-height: 100%;
+      letter-spacing: -0.06em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .subtitle{
+      font-family: Atyp Display;
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 100%;
+      letter-spacing: -0.06em;
+      text-align: center;
+    }
+  }
+}
+
+.figure{
+  position: absolute;
+  z-index: -2;
+  margin-top: -20%;
+  left: 0;
+}
+
+.form{
+  display: grid;
+  gap: 24px 64px;
+  grid-template-areas:
+          'a b'
+          'a b'
+          'e e'
+          'f f'
+          'g g'
+          'k k'
+          'm m';
+  button{
+    grid-area: m;
+    background: #B3FF68;
+    border: none;
+
+    font-family: Atyp Display;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 16px 0;
+
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+.form-container{
+  margin-top: 48px;
+}
+
+.form-input{
+
+  &:nth-child(5) {
+    grid-area: e;
+  }
+
+  &:nth-child(6) {
+    grid-area: f;
+  }
+
+  .input-title{
+    font-family: Atyp Display;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18.18px;
+    letter-spacing: -0.06em;
+    color: #FFFFFFA3;
+
+    span{
+      font-family: Atyp Display;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 18.18px;
+      letter-spacing: -0.06em;
+      color: #B3FF68;
+    }
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 16px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+
+    word-break: break-word;
+
+    font-family: Atyp Display;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31.2px;
+    letter-spacing: -0.04em;
+
+    &::placeholder {
+
+      font-family: Atyp Display;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 31.2px;
+      letter-spacing: -0.04em;
+
+      color: rgba(255, 255, 255, 0.73);
+    }
+  }
+}
+
+.checkbox-input{
+  grid-area: g;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  p {
+    max-width: 652px;
+
+    font-family: Atyp Display;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.4px;
+  }
+  a {
+    color: #B3FF68;
+    text-decoration: underline;
+  }
+}
+
+.alert{
+  border-bottom: 1px solid red !important;
+}
+
+.alert_checkbox{
+  grid-area: k;
+  color: red;
+
+  font-family: Atyp Display;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.4px;
+  margin-top: -10px;
+}
+
+@media (max-width: 1100px) {
+  .form-titles{
+    .title{
+      font-size: 110px !important;
+    }
+    .subtitle{
+      font-size: 35px !important;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .figure{
+    width: 100%;
+    height: auto;
+  }
+
+  .form{
+    grid-template-areas: none;
+    grid-template-columns: 1fr;
+
+    button {
+      grid-area: unset;
+    }
+  }
+
+  .form-input {
+
+    &:nth-child(5) {
+      grid-area: unset;
+    }
+
+    &:nth-child(6) {
+      grid-area: unset;
+    }
+  }
+  .alert_checkbox{
+    grid-area: unset;
+  }
+  .checkbox-input {
+    grid-area: unset;
+  }
+}
+
+@media (max-width: 670px) {
+  .figure{
+    height: 1461px;
+    width: auto;
+    margin-left: -20%;
+  }
+}
+
+@media (max-width: 588px) {
+  .figure {
+    height: 1461px;
+    width: auto;
+    margin-left: -40%;
+  }
+
+  .form-titles {
+    .title {
+      font-size: 64px !important;
+    }
+
+    .subtitle {
+      margin-top: 16px;
+      font-size: 18px !important;
+    }
+  }
+
+  .form-padding{
+    padding: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .figure {
+    height: 1461px;
+    width: auto;
+    margin-left: -80%;
+  }
+}
+
+@media (max-width: 390px) {
+  .figure {
+    height: 1461px;
+    width: auto;
+    margin-left: -90%;
+  }
+}

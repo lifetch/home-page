@@ -1,0 +1,162 @@
+.wrapper{
+  background: #B3FF68;
+  padding: 64px 25px;
+  border-radius: 32px 32px 0px 0px;
+  text-align: center;
+  margin-top: 96px;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.content{
+  max-width: 1280px;
+  margin: auto;
+}
+
+.static-content{
+  display: flex;
+  .logo{
+    width: 119px;
+    height: 24px;
+  }
+  .columns{
+    display: grid;
+    margin-left: 89px;
+    gap: 80px 89px;
+    .column{
+      text-align: left;
+      .title{
+        font-family: Atyp Display;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #121212;
+      }
+      .links{
+        display: grid;
+        text-align: left;
+        margin-top: 32px;
+        gap: 8px;
+        .link{
+          font-family: Atyp Display;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 18px;
+          text-decoration: none;
+          color: #121212;
+        }
+      }
+    }
+  }
+}
+
+.col_2{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .contact-info{
+    text-align: right;
+    color: #121212;
+    .phone-number{
+      font-family: Atyp Display;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 100%;
+    }
+    .email{
+      font-family: Atyp Display;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 100%;
+      margin-top: 13px;
+    }
+  }
+}
+
+.submit {
+  font-family: Atyp Display;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 16px 32px;
+  display: inline-block;
+  margin-top: 33px;
+  background: #121212;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.desktop-container{
+  width: 100%;
+  position: relative;
+  margin-top: 64px;
+  hr{
+    border: 1px solid black;
+  }
+  .low-text {
+    margin-top: 64px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .columns{
+    margin-left: 40px !important;
+    gap: 60px 50px !important;
+  }
+  .phone-number{
+    font-size: 28px !important;
+  }
+  .submit{
+    padding: 14px 28px !important;
+    margin-top: 25px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .static-content{
+    flex-flow: column !important;
+  }
+  .col_2{
+    flex-flow: column;
+    justify-content: unset;
+  }
+  .contact-info{
+    order: 1;
+    text-align: left !important;
+  }
+  .columns{
+    order: 2;
+    margin-top: 56px;
+    margin-left: unset !important;
+  }
+  .phone-number{
+    margin-top: 24px !important;
+  }
+  .email{
+    margin-top: 8px !important;
+  }
+  .logo-container{
+    display: flex;
+    align-items: center;
+    gap: 38px;
+  }
+  .submit{
+    margin-top: unset !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .phone-number {
+    font-size: 24px !important;
+  }
+  .email, .submit {
+    font-size: 16px !important;
+  }
+  .submit{
+    padding: 12px !important;
+  }
+}
