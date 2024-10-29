@@ -1,0 +1,8 @@
+services:
+  home-page-react-app:
+    container_name: home-page-react-app-container
+    image: home-page-react-app:latest
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
