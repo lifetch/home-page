@@ -71,7 +71,7 @@ export default function Competencies() {
                   height={334}
                   className={style.figure_1}
                 />
-                <p className={style["block-title"]}>Вэб-разработка</p>
+                <p className={style["block-title"]}>Вeб-разработка</p>
               </div>
             </a>
 

@@ -32,7 +32,7 @@ export default function Header({ contactLink }: PropsType) {
         />
 
         <div className={style["mobile-menu"]}>
-          <a href={contactLink} target={"_blank"}>
+          <a href="#contact-form">
             <button className={style["connect-btn"]}>Связаться</button>
           </a>
           <button
@@ -73,11 +73,6 @@ export default function Header({ contactLink }: PropsType) {
               </a>
             </li>
             <li>
-              <a href="#review" onClick={() => setBurgerMenuOpen(false)}>
-                Отзывы
-              </a>
-            </li>
-            <li>
               <a href="#cases" onClick={() => setBurgerMenuOpen(false)}>
                 Кейсы
               </a>
@@ -107,13 +102,10 @@ export default function Header({ contactLink }: PropsType) {
                   <a href="#competencies">Компетенции</a>
                 </li>
                 <li>
-                  <a href="#review">Отзывы</a>
-                </li>
-                <li>
                   <a href="#cases">Кейсы</a>
                 </li>
               </ul>
-              <a href={contactLink} target={"_blank"}>
+              <a href="#contact-form">
                 <button className={style["connect-btn"]}>Связаться</button>
               </a>
             </div>
