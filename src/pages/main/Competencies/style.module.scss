@@ -1,43 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-.wrapper{
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+.wrapper {
   max-width: 1280px;
   margin: 128px auto 0 auto;
   padding: 0 25px;
   position: relative;
-  .yac_link{
+  .yac_link {
     position: absolute;
     margin-top: -140px;
     top: 0;
   }
-  a{
+  a {
     color: white;
     text-decoration: none;
     cursor: pointer;
   }
 }
 
-.end_block_center{
+.end_block_center {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
 }
 
-.figure{
+.figure {
   display: block;
   margin: auto;
 }
 
-.title{
+.title {
   margin-top: -20px;
-  div{
+  div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 16px;
-
   }
-  h1{
+  h1 {
     text-transform: uppercase;
     font-family: Atyp Display;
     font-size: 144px;
@@ -47,12 +46,12 @@
   }
 }
 
-.content{
+.content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  'a d'
-  'c c';
+    "a d"
+    "c c";
   gap: 16px;
   padding-top: 74px;
 }
@@ -64,33 +63,33 @@
   padding-top: 72px;
 }
 
-.description{
+.description {
   max-width: 416px;
   font-family: IBM Plex Mono;
   font-size: 24px;
   font-weight: 400;
   line-height: 28.8px;
   letter-spacing: -0.06em;
-  color: #FFFFFFA3;
+  color: #ffffffa3;
 }
 
-.blocks{
+.blocks {
   margin-top: 72px;
   display: flex;
   flex-flow: column;
   gap: 16px;
 }
 
-.block{
+.block {
   width: 100%;
   background: #171717;
-  border: 1px solid #FFFFFF14;
+  border: 1px solid #ffffff14;
   border-radius: 16px;
-  transition: .5s ease;
-  &:hover{
-    transform: scale(.99);
+  transition: 0.5s ease;
+  &:hover {
+    transform: scale(0.99);
   }
-  p{
+  p {
     font-family: Atyp Display;
     font-size: 44px;
     font-weight: 400;
@@ -119,22 +118,22 @@
   margin: 80px 12px 243px 33px;
 }
 
-.end_block{
+.end_block {
   grid-area: c;
   width: 100%;
   height: 640px;
   background: #171717;
-  border: 1px solid #FFFFFF14;
+  border: 1px solid #ffffff14;
   border-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
   position: relative;
-  transition: .5s ease;
+  transition: 0.5s ease;
 
   &:hover {
-    transform: scale(.99);
+    transform: scale(0.99);
   }
   .title {
     font-family: Atyp Display;
@@ -150,21 +149,21 @@
     font-weight: 400;
     line-height: 21.6px;
     text-align: center;
-    color: #8B8B8B;
+    color: #8b8b8b;
     margin-top: 8px;
   }
-  .dec-blocks{
+  .dec-blocks {
     position: absolute;
     width: 100%;
     height: 100%;
   }
-  .dec-block{
-    background: #FFFFFF14;
+  .dec-block {
+    background: #ffffff14;
     position: absolute;
     border-radius: 32px;
     aspect-ratio: 1/1;
 
-    &:nth-child(1){
+    &:nth-child(1) {
       width: 176px;
       top: 6%;
       left: 10%;
@@ -200,7 +199,7 @@
       right: 18%;
       rotate: -15deg;
       filter: blur(20px);
-      background: #B3FF68;
+      background: #b3ff68;
     }
 
     &:nth-child(6) {
@@ -212,44 +211,44 @@
   }
 }
 
-.title_1{
+.title_1 {
   display: flex;
 }
-.mobile_menu{
+.mobile_menu {
   display: flex;
   flex-flow: column;
-  div{
+  div {
     display: flex;
     flex-flow: column;
   }
 }
 
 @media (max-width: 1300px) {
-  .content{
-    display:block;
+  .content {
+    display: block;
   }
-  .row_2{
-    .blocks{
+  .row_2 {
+    .blocks {
       margin-top: 16px;
     }
   }
-  .blocks{
+  .blocks {
     width: 100%;
     align-self: center;
   }
-  .block{
+  .block {
     max-width: 632px;
     align-self: center;
   }
-  .end_block{
+  .end_block {
     margin: auto;
     max-width: 632px;
     margin-top: 16px;
-    .title{
+    .title {
       text-align: center;
     }
   }
-  .figure{
+  .figure {
     right: 5%;
     position: absolute;
     top: -3%;
@@ -264,12 +263,12 @@
 }
 
 @media (max-width: 767px) {
-  .figure_2{
+  .figure_2 {
     margin: 0 74px 54px;
   }
-  .mobile_menu{
+  .mobile_menu {
     text-align: center;
-    h1{
+    h1 {
       font-family: Atyp Display;
       font-size: 64px;
       font-weight: 400;
@@ -289,20 +288,22 @@
     margin: 162px auto 0 auto;
     position: relative;
   }
-  .information{
+  .information {
     grid-template-columns: 1fr;
-    .description{
+    .description {
       //max-width: 312px;
       justify-self: center;
     }
   }
-  .block{max-width: 312px;}
-  .figure_1{
+  .block {
+    max-width: 312px;
+  }
+  .figure_1 {
     width: 283px;
     height: 167px;
     margin: 64px auto 35px auto;
   }
-  .figure_2{
+  .figure_2 {
     width: 187px;
     height: 208px;
   }
@@ -329,10 +330,10 @@
 
     margin-bottom: 32px !important;
   }
-  .end_block{
+  .end_block {
     max-width: 312px;
     height: 260px;
-    .title{
+    .title {
       text-align: center;
 
       font-family: Atyp Display;
@@ -340,7 +341,6 @@
       font-weight: 400;
       line-height: 30.72px;
       letter-spacing: -0.02em;
-
     }
 
     .dec-block {
@@ -364,7 +364,6 @@
 
       &:nth-child(5) {
         width: 44px;
-
       }
 
       &:nth-child(6) {
